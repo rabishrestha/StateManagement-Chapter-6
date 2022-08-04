@@ -1,0 +1,17 @@
+﻿@using StateManagement.Data
+@{
+    ViewData["Title"] = "Student Page";
+
+    var userId = TempData["UserId"] ?? null;
+    var userName = TempData["UserName"] ?? null;
+}
+
+@model StudentData
+
+<h1>Student</h1>
+<p>Name from Session : @Model.Name</p>
+<p>Age from Session :@Model.Age</p>
+<p>UserId from Temp Data: @userId</p>
+<p>User Name from Cookie and than from Temp Data: @userName</p>
+
+
